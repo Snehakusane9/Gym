@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RAW FITNESS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <!img src="logo.jpg" alt="Gym Logo" class="logo">
+            <h1>RAW FITNESS</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#videos">video</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" >
+        <div class="video-backround">
+            <video autoplay muted loop id="bg-video">
+                <source src="home.mp4" type="video/mp4">
+                you browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-content">
+        <h1>Welcome to Gym Fitness</h1>
+        <p>Your fitness journey starts here!</p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 style="color:#101010">About Us</h2>
+        <p>We are a state-of-the-art fitness center offering a wide range of equipment and classes to help you reach your fitness goals.</p>
+        <h3>Welcome to RAW FITNESS, where fitness meets community!
+         We are more than just a gym – 
+            we’re a hub for individuals passionate about health, wellness, and achieving their personal best.
+            At RAW FITNESS ,we believe that fitness is a journey, not a destination. 
+            Whether you're taking your first steps towards a healthier lifestyle or are a seasoned athlete,
+             we have the tools, expertise, and support to help you reach your goals.
+             
+             Our mission is to empower people to live stronger, healthier lives. We strive to create a welcoming environment that inspires and motivates members to push their limits and embrace a sustainable fitness routine.
+            </h3>
+            <h4>What We Offer</h4> 
+            <ol>
+             <li>State-of-the-Art Equipment: From cardio machines to free weights, we provide the latest in fitness technology.</li>
+            <li>Expert Trainers: Our certified trainers are here to guide and support you at every step.</li>
+             <li>Group Classes: Enjoy a variety of classes including yoga, Zumba, strength training, and HIIT.</li>
+             <li>Personalized Programs: Tailored workout plans to fit your unique fitness goals.</li>
+             <li>Community Events: Join us for challenges, workshops, and events that bring our fitness family together.</li>
+            </ol>
+             <h4>Why Choose Us?</h4>
+             <h4>Friendly and supportive atmosphere.
+             Flexible membership plans to suit your needs.
+             Clean and hygienic facilities.
+             Commitment to your progress and well-being.
+             At RAW FITNESS, it’s not just about working out; it’s about creating a healthier and happier you. Join us today and start your journey to becoming the best version of yourself.</h4>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <h2>Class Schedule</h2>
+        <div class="schedule-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Time</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Yoga</td>
+                        <td>9:00 AM - 10:00 AM</td>
+                        <td>Alice</td>
+                    </tr>
+                    <tr>
+                        <td>Cardio</td>
+                        <td>10:30 AM - 11:30 AM</td>
+                        <td>John</td>
+                    </tr>
+                    <tr>
+                        <td>Strength Training</td>
+                        <td>12:00 PM - 1:00 PM</td>
+                        <td>David</td>
+                    </tr>
+                    <tr>
+                        <td>Zumba</td>
+                        <td>6:00 PM - 7:00 PM</td>
+                        <td>Susan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership">
+        <h2>Become a Member</h2>
+        <p>Join us today and start your fitness journey. Choose the membership plan that suits your needs!</p>
+        <div class="membership-plans">
+            <div class="plan">
+                <h3>Basic</h3>
+                <p>$30/month</p>
+                <button onclick="alert('You have selected the Basic plan!')">Join Now</button>
+            </div>
+            <div class="plan">
+                <h3>Standard</h3>
+                <p>$50/month</p>
+                <button onclick="alert('You have selected the Standard plan!')">Join Now</button>
+            </div>
+            <div class="plan">
+                <h3>Premium</h3>
+                <p>$70/month</p>
+                <button onclick="alert('You have selected the Premium plan!')">Join Now</button>
+            </div>
+        </div>
+    </section>
+    <section id="videos">
+        <h1 style="font-size: 3rem;color:black;">Workout Videos</h1>
+        <div class="videos">
+            <iframe width="560" height="315" src="gym1.mp4" type="video/mp4" title="Workout Video 1" ></iframe>
+            <iframe width="560" height="315" src="gym2.mp4" type="video/mp4" title="Workout Video 2" ></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gym Fitness. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
